@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    position: relative;
+    box-sizing: border-box;
+    font-family: 'Technology',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2.4rem;
+    background-color: black;
+    color: white;
+    word-break: keep-all;
+    cursor: default;
+    height: 100vh;
+}
+
+.canvas {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 1300px;
+    height: 920px;
+    /* background-image: url('./images/las-vegas2.png'); */
+    /* background-color: black; */
+    background-size: 1300px;
+    
+}
+
+img {
+    opacity: 0;
+    animation: background-light 4s ease-in-out forwards;
+}
+
+.course {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 3.4rem;
+    letter-spacing: 0.2rem;
+    font-weight: bold;
+    top: 40px;
+    text-align: center;
+    filter: blur(0.005em);
+}
+
+.the {
+    position: absolute;
+    left: 167px;
+    top: 13%;
+}
+
+.title {
+    position: absolute;
+    left: 50px;
+    top: 18%;
+}
+
+.title h1 {
+    font-size: 16rem;
+    font-weight: bold;
+    /* color: #fff; */
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    /* animation: shadow 3s ease-in-out infinite; */
+    user-select: none;
+    white-space: nowrap;
+    filter: blur(0.005em);
+}
+
+.title-top {
+    color: magenta;
+    text-shadow: 0 0 0.15em #ac1dcc;
+    animation: title-switch1 1s 2s ease-in-out infinite;
+}
+
+.title-bottom {
+    color: orange;
+    text-shadow: 0 0 0.15em #cc891d;
+    margin-top: -11rem;
+    animation: title-switch2 1s 2s ease-in-out infinite;
+}
+
+h5 {
+    font-size: 6rem;
+    font-weight: 300;
+    color: #fff;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    /* animation: shadow 10s ease-in-out infinite; */
+    user-select: none;
+    white-space: nowrap;
+    filter: blur(0.005em);
+    margin-bottom: -1rem;
+    text-align: center;
+}
+
+.size-6 {
+    font-size: 6rem;
+    letter-spacing: 0.6rem;
+}
+
+.typographic {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 300;
+    color: #fff;
+    letter-spacing: 0.02em;
+    /* animation: shadow 10s ease-in-out infinite; */
+    user-select: none;
+    white-space: nowrap;
+    filter: blur(0.005em);
+    margin-top: 0rem;
+}
+
+.name {
+    position: absolute;
+    top: 54.5%;
+    right: 50px;
+    /* transform: translateX(-50%); */
+}
+
+.name h3 {
+    font-size: 16rem;
+    user-select: none;
+    white-space: nowrap;
+    font-weight: bold;
+    filter: blur(0.005em);
+    letter-spacing: 0.7rem;
+    text-align: center;
+    /* animation: shadow 3s ease-in-out infinite; */
+}
+
+.name-spacing {
+    letter-spacing: 1.54rem;
+}
+
+.name-top {
+    color: white;
+}
+
+.name-bottom {
+    color: white;
+    margin-top: -12.5rem;
+}
+
+.time {
+    position: absolute;
+    bottom: 40px;
+    left: 55%;
+    transform: translateX(-50%);
+}
+
+.time h6 {
+    font-size: 4.5rem;
+    letter-spacing: 0.2rem;
+    font-weight: bold;
+    filter: blur(0.005em);
+}
+
+@keyframes background-light {
+    0% { 
+        opacity: 0;
+    } 100% {
+        opacity: 1;
+    }  
+}
+
+
+@keyframes title-switch1 {
+    0% { 
+        color: magenta;
+        text-shadow: 0 0 0.15em #ac1dcc;
+    } 50% {
+        color: orange;
+        text-shadow: 0 0 0.15em #cc891d;
+    } 100% {
+        color: magenta;
+        text-shadow: 0 0 0.15em #ac1dcc;
+    }
+        
+}
+
+@keyframes title-switch2 {
+    0% { 
+        color: orange;
+        text-shadow: 0 0 0.15em #cc891d;
+    } 50% {
+        color: magenta;
+        text-shadow: 0 0 0.15em #ac1dcc;
+    } 100% {
+        color: orange;
+        text-shadow: 0 0 0.15em #cc891d;
+    }
+        
+}
